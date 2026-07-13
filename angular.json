@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "conceitos-basicos": {
+    "conceitos-basicos-angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/conceitos-basicos",
+            "outputPath": "dist/conceitos-basicos-angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "conceitos-basicos:build:production"
+              "buildTarget": "conceitos-basicos-angular:build:production"
             },
             "development": {
-              "buildTarget": "conceitos-basicos:build:development"
+              "buildTarget": "conceitos-basicos-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -98,5 +98,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "9f22eefa-0d38-4f54-9a91-ac2e100208e2"
   }
 }
